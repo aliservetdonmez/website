@@ -20,6 +20,14 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      header: "header.html"
+      footer: "footer.html"
+
 # Handling Reading
 exclude:
   - "Gemfile"
