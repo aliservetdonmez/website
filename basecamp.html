@@ -5,42 +5,8 @@ permalink: /basecamp/
 header: false
 ---
 
-<header class="hello-basecamp">
-  <h1 class="greeting">Hello, Basecamp!</h1>
-</header>
-
-<section class="intro-section">
-  <p>
-    <strong>This is <a href="http://medium.com/&#64;aliservetdonmez">Ali</a>.</strong> I am the guy who created <a href="http://workinprogress.show">Work in Progress Show website</a> for <a href="http://twitter.com/jasonfried">Jason</a> and <a href="http://twitter.com/natekontny">Nate</a>. As soon as I heard you were looking for interns in 2016, I decided to show you how much I care about your work through this page.
-  </p>
-
-  <p>
-    Please watch <strong>super short</strong> introduction video that I recorded <em>for you</em> and check out the product concept website that I am presenting in the video at <a href="http://talktomycustomers.com">http://talktomycustomers.com</a>.
-  </p>
-
-  <iframe class="video" src="https://player.vimeo.com/video/64761044?color=9a4024&title=0&byline=0&portrait=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</section>
-
+{% include basecamp/header.html %}
+{% include basecamp/intro-section.html %}
 <div class="background-wrapper">
-  <section class="basecamp-and-me-section">
-    <div class="why-me">
-      <h1 class="title">You should pick <em>me</em> because&hellip;</h1>
-      <ul>
-        <li>I am dangerous enough (for sth) with coding</li>
-        <li>I do what I do with passion — that is programming</li>
-        <li>I constantly seek to learn new things and adapt my skills as I evolve</li>
-        <li>I am a very good written communicator — I pick my words carefully for careful readers to understand my thoughts as clear as possible</li>
-        <li>I am good at creating (and destroying) new ideas and love to work them become real products or features</li>
-        <li>I like watching movie trailers</li>
-      </ul>
-    </div>
-    <div class="why-basecamp">
-      <h1 class="title">I <strong>must</strong> work with you because&hellip;</h1>
-      <ul class="list">
-        <li>Remote work (also the book)</li>
-        <li>Basecamp's company culture for employees (Jason's talks)</li>
-        <li>I have to work with people who are possibly much better than I am in what they do so I can learn from them</li>
-      </ul>
-    </div>
-  </section>
+  {% include basecamp/basecamp-and-me-section.html %}
 </div>
