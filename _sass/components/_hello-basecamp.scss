@@ -1,0 +1,23 @@
+$light-white-color: rgb(237,241,241);
+
+.hello-basecamp {
+  max-width: none;
+  @include vertical-stack;
+  @include justify-content(flex-end);
+
+  height: 60vh;
+  min-height: 400px;
+
+  background-image: url("https://git.io/vgyQ5");
+  background-size: cover;
+  background-position: center;
+
+  > .greeting {
+    font-size: $base-font-size * 5;
+    font-weight: 500;
+    text-align: right;
+    color: $light-white-color;
+
+    // &:after { content: " ;-)"; }
+  }
+}

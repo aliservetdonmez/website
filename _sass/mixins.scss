@@ -1,0 +1,22 @@
+@mixin stack-constraints {
+  > * {
+    width: 100%;
+    max-width: 1088px;
+  }
+}
+
+@mixin vertical-stack {
+  @include display(flex);
+  @include flex-flow(column);
+  @include align-items(center);
+
+  @include stack-constraints;
+}
+
+@mixin horizontal-stack {
+  @include display(flex);
+  @include flex-flow(row);
+  @include justify-content(center);
+
+  @include stack-constraints;
+}

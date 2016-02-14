@@ -1,0 +1,9 @@
+.intro-section {
+  @include padding($base-spacing*2 10vw);
+
+  font-size: $base-font-size * 1.4;
+
+  > .video {
+    margin-top: $base-spacing;
+  }
+}

@@ -1,0 +1,19 @@
+.basecamp-and-me-section {
+  @include horizontal-stack;
+
+  @include justify-content(space-between);
+  > * { @include flex-basis(48%); }
+
+  @include padding($base-spacing*2 2vw);
+
+  font-size: $base-font-size * 1.2;
+
+  .title {
+    font-size: $base-font-size * 1.4;
+    > em { @include asterisks-before-and-after; }
+  }
+
+  ul {
+    @extend %default-ul;
+  }
+}

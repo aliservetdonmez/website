@@ -1,0 +1,10 @@
+$light-white-color: rgb(237,241,241);
+$light-sand-color: rgb(241,223,181);
+
+.background-wrapper {
+  @include vertical-stack;
+
+  max-width: none;
+
+  background-color: $light-sand-color;
+}

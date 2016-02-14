@@ -1,0 +1,13 @@
+@mixin asterisks-before-and-after {
+  &:before { content: "*"; }
+  &:after { content: "*"; }
+}
+
+strong {
+  @include asterisks-before-and-after;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
