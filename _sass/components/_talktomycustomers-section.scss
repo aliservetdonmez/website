@@ -1,0 +1,31 @@
+.talktomycustomers-section {
+  @include padding($base-spacing*2 4vw);
+
+  font-size: $base-font-size * 1.2;
+
+  h1 {
+    font-size: $base-font-size * 1.6;
+  }
+  h2 {
+    font-size: $base-font-size * 1.2;
+    margin-top: $small-spacing;
+    margin-bottom: $small-spacing / 2;
+  }
+
+  ol {
+    @include padding(1vw $base-spacing*4);
+
+    text-align: justify;
+
+    .question {
+      margin-bottom: $small-spacing / 4;
+      font-size: $base-font-size * 1.1;
+      font-weight: bold;
+    }
+  }
+
+  .gototalktomycustomers {
+    margin-top: -$base-spacing;
+    &::before { content: "→ "; }
+  }
+}

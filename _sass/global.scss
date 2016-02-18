@@ -3,6 +3,10 @@
   &:after { content: "*"; }
 }
 
+a {
+  text-decoration: underline;
+}
+
 strong {
   @include asterisks-before-and-after;
 }

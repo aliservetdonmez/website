@@ -1,0 +1,9 @@
+.thumbnail-list {
+  @include display(flex);
+  @include flex-flow(wrap);
+
+  @include justify-content(space-between);
+  > * { @include flex-basis(15%); }
+
+  @include align-items(center);
+}

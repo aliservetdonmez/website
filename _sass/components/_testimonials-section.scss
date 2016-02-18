@@ -1,0 +1,16 @@
+.testimonials-section {
+  @include padding($base-spacing*2 2vw);
+
+  font-size: $base-font-size * 1.2;
+
+  > .title {
+    font-size: $base-font-size * 1.4;
+  }
+
+  em { @include asterisks-before-and-after; }
+  
+  ul {
+    @extend %default-ul;
+    @include padding(1vw $base-spacing*4);
+  }
+}
