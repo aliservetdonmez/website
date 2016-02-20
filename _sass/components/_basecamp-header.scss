@@ -13,11 +13,11 @@ $light-white-color: rgb(237,241,241);
   background-position: center;
 
   > .greeting {
-    font-size: $base-font-size * 5;
-    font-weight: 500;
-    // text-align: right;
-    color: $light-white-color;
+    margin-bottom: $small-spacing * 0.2;
 
-    // &:after { content: " ;-)"; }
+    font-size: $base-font-size * 4;
+    font-weight: 500;
+    color: $light-white-color;
+    text-align: center;
   }
 }
