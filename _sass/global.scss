@@ -15,3 +15,22 @@ em {
   font-style: normal;
   font-weight: bold;
 }
+
+body {
+  > .hide-content {
+    @include display(flex);
+    @include flex(1);
+  }
+  > *:not(.hide-content) {
+    display: none;
+  }
+
+  @include media(em(768)) {
+    > .hide-content {
+      display: none;
+    }
+    > *:not(.hide-content) {
+      @include display(flex);
+    }
+  }
+}
