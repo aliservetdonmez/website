@@ -8,9 +8,4 @@
   }
 
   em { @include asterisks-before-and-after; }
-  
-  ul {
-    @extend %default-ul;
-    @include padding(1vw $base-spacing*4);
-  }
 }
