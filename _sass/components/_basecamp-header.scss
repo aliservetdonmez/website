@@ -1,4 +1,5 @@
 $light-white-color: rgb(237,241,241);
+$light-black-color: rgb(43,43,43);
 
 .basecamp-header {
   max-width: none;
@@ -8,14 +9,16 @@ $light-white-color: rgb(237,241,241);
   height: 60vh;
   min-height: 400px;
 
-  background-image: url("https://git.io/vgyQ5");
+  @include background-image(
+      linear-gradient(transparent 80%, $light-black-color 100%)
+    , url("https://git.io/vgyQ5"));
   background-size: cover;
   background-position: center;
 
   > .greeting {
     margin-bottom: $small-spacing * 0.2;
 
-    font-size: $base-font-size * 4;
+    font-size: $base-font-size * 5;
     font-weight: 500;
     color: $light-white-color;
     text-align: center;
