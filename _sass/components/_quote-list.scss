@@ -8,8 +8,9 @@ $light-watermelon-color: rgb(239,114,122);
   margin-top: $base-spacing * 2;
 
   > blockquote {
-    width: 50%;
-    font-size: $base-font-size * 0.9;
+    width: 70%;
+    @include margin($small-spacing * 0.4);
+    font-size: $base-font-size * 0.7;
 
     border-radius: $base-border-radius * 2;
     padding: 0.75em 1em;
@@ -35,7 +36,7 @@ $light-watermelon-color: rgb(239,114,122);
   }
 
   > blockquote cite {
-    font-size: $base-font-size * 0.7;
+    font-size: $base-font-size * 0.4;
     &:before { content: "— "; }
   }
 }
