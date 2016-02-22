@@ -3,7 +3,10 @@
   @include flex-flow(wrap);
 
   @include justify-content(space-between);
-  > * { @include flex-basis(15%); }
+  > * {
+    min-width: 0;
+    @include flex-basis(15%);
+  }
 
   @include align-items(center);
 }
